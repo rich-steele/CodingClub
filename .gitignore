@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+
+# Other
+CodingClubSource/CodingClub/Debug/*
+CodingClubSource/CodingClubTests/Debug/*
+CodingClubSource/CodingClub.VC.db
+CodingClubSource/CodingClub.VC.VC.opendb
