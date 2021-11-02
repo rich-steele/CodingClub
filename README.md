@@ -151,15 +151,17 @@ This sends the current branch's commits up to the internet in this case github. 
 
 `git push`
 
-The first time you do this it says an error. This is because github doesn't yet know about your new branch. Nicely though, it tells you what to type to fix this. Copy what it says and it will work nicely. (instead of `--set-upstream` you can use the shorthand `-u`). Eventually you will get used to typing this out the first time you push a new branch, but it's okay for now to go through this process. Now the internet knows about this branch and you can use just `git push` in the future
+The first time you do this it says an error. This is because github doesn't yet know about your new branch. Nicely though, it tells you what to type to fix this. Copy what it says and it will work nicely. (instead of `--set-upstream` you can use the shorthand `-u`). Eventually you will get used to typing this out the first time you push a new branch, but it's okay for now to go through this process. Now the internet knows about this branch and you can use just `git push` in the future.
+
+Also if this is the first time that you push then github may ask for authorisation. 
 
 #### Pull request
 
 This sends a request to blessed to merge in the changes you have made. Go to your github fork page and find your way to the branch that you have just pushed, and click New Pull Request. I won't go into details here as there are a few ways to do this. If you are quick enough after pushing then github will even give you a notification about the branch and suggest that you pull request. GIve the pull request a sensible title, and a good description. Check the files changed are the ones you want, then submit it.
 
-As the owner of blessed, I will get a notification then. I will comment on the PR, and potentially merge in your changes. Get used to people commenting on your code, and commenting on others. Code reviews are a huge part of software development, and are a safe place to improve and learn. Eventually you will all be code reviewing each other. Don't take offense, this is the final call before dev work goes into production code where it will often not change again. On this note, you do not merge in your own pull requests. Say it out loud. You Do Not Merge In Your Own Pull Requests! They must be reviewed always. No exceptions. If you accidentally click merge, then get a grown up. We've all done it, I've done it. Get it fixed asap. PRs have to be reviewed, approved, then merged.
+As the owner of blessed, I will get a notification then. I will comment on the PR, and potentially merge in your changes. Get used to people commenting on your code, and commenting on others. Code reviews are a huge part of software development, and are a safe place to improve and learn. Eventually you will all be code reviewing each other. Don't take offense, this is the final call before dev work goes into production code where it will often not change again. On this note, you do not merge in your own pull requests. Say it out loud. You Do Not Merge In Your Own Pull Requests! (Unless the product owner tells you to I suppose) They must be reviewed always. No exceptions. If you accidentally click merge, then get a grown up. We've all done it, I've done it. Get it fixed asap. PRs have to be reviewed, approved, then merged.
 
-In this case, I won't actually merge in your changes, but a PR will be the final step so you know this is all working.
+In this case, I won't actually merge in your changes, but I will comment. Seeing that on your PR will be the final step so you know this is all working.
 </details>
 
 <details>
