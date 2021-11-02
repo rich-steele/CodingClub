@@ -24,7 +24,7 @@ Then you should be taken to the url of: `https://github.com/<YOUR_NAME>/CodingCl
 
 This is the github page for your copy of my repository. They are not connected, although they can be and we'll do that in a bit.
 
-Click green button "Code" in the middle, and copy the grey box text (click the two squares symbol to copy automatically)
+Click green button "Code" in the middle, make sure that HTTPS is selected for now, and copy the grey box text (click the two squares symbol to copy automatically)
 
 Now it's all set up on github, next we set up on your computer.
 
@@ -84,6 +84,19 @@ Viewing git as a tree is the best way, it makes branches and merges make sense v
 Now in VS code after you go to the top tool bar -> File -> Open Folder and choose the Coding club folder, an extra option will appear! If you go to the left hand side bar and click on 'source control' (three small circles with a couple of connecting lines), there are five icons along the top bar marked SOURCE CONTROL. The one that looks like 3 vertical lines with three dots on is 'View Git Graph'. Clicking that will show the git tree representation. The other useful control here is the 'Show Remote Branches' tick box at the top in the middle, which will toggle whether to show the remote repos as well, or just your own stuff.
 
 Working in this view is highly recommended. Even when doing my work in a different IDE (Integrated development environment) like Visual studio 2015 which is where this project will be mostly based, I still keep a VS Code window open with Git Graph because it's pretty. Also if you go to the top menu bar and click Terminal -> New Terminal then you even get a nice bash window below to type in any git commands.
+
+Lastly you have to set visual studios code with your git infomation. Type:
+
+`git config --global user.name` followed by your name so mine would look like:
+
+> `git config --global user.name Richard Steele`
+
+`git config --global user.email` followed by your email for your github account
+
+and then if you don't want to have to enter your password each time then do:
+
+`git config --global user.password` followed by your password for your github account. But obviously not on a shared computer
+
 </details>
 
 <details>
