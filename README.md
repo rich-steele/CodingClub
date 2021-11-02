@@ -155,9 +155,9 @@ In this case, I won't actually merge in your changes, but a PR will be the final
 ## Updating with stuff I've added
 
 
-`git fetch --all` - This gets any changes that any of your remotes has made. The purpose here is to fetch any changes that I (blessed) have pushed, like a new challenge
+`git fetch --all` This gets any changes that any of your remotes has made. The purpose here is to fetch any changes that I (blessed) have pushed, like a new challenge
 
-`git checkout main` - We briefly enter main branch to update it, remember always keep main up to date, and branch off from that point!
+`git checkout main` We briefly enter main branch to update it, remember always keep main up to date, and branch off from that point!
 
 `git merge blessed/main` This merges in MY (blessed) main branch. Now yours is upto date
 
