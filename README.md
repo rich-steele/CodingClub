@@ -14,7 +14,7 @@
 
 ## Set up your project
 
-Go to https://github.com/Richard-Steele-Bluefruit/CodingClub (Reading this, you may already be on this page, open a new window so you can follow this still)
+Go to https://github.com/Richard-Steele-Bluefruit/CodingClub (reading this, you may already be on this page, open a new window so you can follow this still)
 
 Top right, click on Fork
 
@@ -155,9 +155,9 @@ In this case, I won't actually merge in your changes, but a PR will be the final
 ## Updating with stuff I've added
 
 
-`git fetch --all` - This gets any changes that any of your remotes has made. The purpose here is to fetch any changes that I (blessed) have pushed, like a new challenge
+`git fetch --all` This gets any changes that any of your remotes has made. The purpose here is to fetch any changes that I (blessed) have pushed, like a new challenge
 
-`git checkout main` - We briefly enter main branch to update it, remember always keep main up to date, and branch off from that point!
+`git checkout main` We briefly enter main branch to update it, remember always keep main up to date, and branch off from that point!
 
 `git merge blessed/main` This merges in MY (blessed) main branch. Now yours is upto date
 
@@ -168,6 +168,7 @@ Now, so you don't accidentally start working in main, get out of it! Either by c
 Or, bring a previous branch you are working on up to date
 
 `git checkout WorkingBranch`
+
 `git merge main`
 
 Now you are good to go. Assuming there are no merge conflicts. This is where a change that you have made in your work-in-progress (WIP) branch conflicts with a change that has been made by blessed to main. If so it will bring up the conflicting lines, and ask you to choose which one to keep. Be careful! This is where you can, and we all have at some point, lost work. On your WIP branch, commit early, commit often, and it will be fine.
