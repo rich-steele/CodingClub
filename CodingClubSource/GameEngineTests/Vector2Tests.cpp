@@ -69,6 +69,22 @@ namespace GameEngineTests
 			Assert::AreEqual(expected.y, result.y);
 		}
 
+		TEST_METHOD(Vector2_Subtract_Operator_Substracts_Rhs_Vector2_From_Lhs) // Right hand side to Left hand side
+		{
+			// Given
+			Vector2 vectorA(6, 9);
+			Vector2 vectorB(2, 4);
+
+			// When
+			Vector2 result = vectorA - vectorB;
+
+			// Then
+			Vector2 expected(4, 5);
+
+			Assert::AreEqual(expected.x, result.x);
+			Assert::AreEqual(expected.y, result.y);
+		}
+
 		TEST_METHOD(Vector2_Add_Assignment_Operator_Adds_Rhs_To_Lhs) // Right hand side to Left hand side
 		{
 			// Given
