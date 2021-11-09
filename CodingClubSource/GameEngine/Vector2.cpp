@@ -42,6 +42,16 @@ Vector2 Vector2::operator + (const Vector2 &v)
 	return result;
 }
 
+Vector2 Vector2::operator - (const Vector2 &v)
+{
+	Vector2 result;
+
+	result.x = this->x - v.x;
+	result.y = this->y - v.y;
+
+	return result;
+}
+
 Vector2& Vector2::operator += (const Vector2 &v)
 {
 	this->x += v.x;

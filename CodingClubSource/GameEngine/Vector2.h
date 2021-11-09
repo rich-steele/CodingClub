@@ -17,6 +17,7 @@ public:
 
 	// Operators
 	Vector2 operator + (const Vector2 &v);
+	Vector2 operator - (const Vector2 &v);
 	Vector2& operator += (const Vector2 &v);
 
 	// Member variables (public for now)
