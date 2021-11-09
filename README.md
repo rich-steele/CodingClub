@@ -14,7 +14,7 @@
 
 ## Set up your project
 
-Go to https://github.com/Richard-Steele-Bluefruit/CodingClub (Reading this, you may already be on this page, open a new window so you can follow this still)
+Go to https://github.com/Richard-Steele-Bluefruit/CodingClub (reading this, you may already be on this page, open a new window so you can follow this still)
 
 Top right, click on Fork
 
@@ -24,7 +24,7 @@ Then you should be taken to the url of: `https://github.com/<YOUR_NAME>/CodingCl
 
 This is the github page for your copy of my repository. They are not connected, although they can be and we'll do that in a bit.
 
-Click green button "Code" in the middle, and copy the grey box text (click the two squares symbol to copy automatically)
+Click green button "Code" in the middle, make sure that HTTPS is selected for now, and copy the grey box text (click the two squares symbol to copy automatically)
 
 Now it's all set up on github, next we set up on your computer.
 
@@ -83,7 +83,20 @@ Viewing git as a tree is the best way, it makes branches and merges make sense v
 
 Now in VS code after you go to the top tool bar -> File -> Open Folder and choose the Coding club folder, an extra option will appear! If you go to the left hand side bar and click on 'source control' (three small circles with a couple of connecting lines), there are five icons along the top bar marked SOURCE CONTROL. The one that looks like 3 vertical lines with three dots on is 'View Git Graph'. Clicking that will show the git tree representation. The other useful control here is the 'Show Remote Branches' tick box at the top in the middle, which will toggle whether to show the remote repos as well, or just your own stuff.
 
-Working in this view is highly recommended. Even when doing my work in a different IDE (Integrated development environment) like Visual studio 2015 which is where this project will be mostly based, I still keep a VS Code window open with Git Graph because it's pretty. Also if you go to the top menu bar and click Terminal -> New Terminal then you even get a nice bash window below to type in any git commands.
+Working in this view is highly recommended. Even when doing my work in a different IDE (Integrated development environment) like Visual studio 2015 which is where this project will be mostly based, I still keep a VS Code window open with Git Graph because it's pretty. Also if you go to the top menu bar and click Terminal -> New Terminal then you even get a nice window below to type in any git commands. Just make sure it's a bash window rather than powershell or other. The plus sign on the top right of your new terminal window lets you pick and add a new terminal window and type.
+
+Lastly you have to set visual studios code with your git infomation. Type:
+
+`git config --global user.name` followed by your name so mine would look like:
+
+> `git config --global user.name Richard Steele`
+
+`git config --global user.email` followed by your email for your github account
+
+and then if you don't want to have to enter your password each time then do:
+
+`git config --global user.password` followed by your password for your github account. But obviously not on a shared computer
+
 </details>
 
 <details>
@@ -138,15 +151,17 @@ This sends the current branch's commits up to the internet in this case github. 
 
 `git push`
 
-The first time you do this it says an error. This is because github doesn't yet know about your new branch. Nicely though, it tells you what to type to fix this. Copy what it says and it will work nicely. (instead of `--set-upstream` you can use the shorthand `-u`). Eventually you will get used to typing this out the first time you push a new branch, but it's okay for now to go through this process. Now the internet knows about this branch and you can use just `git push` in the future
+The first time you do this it says an error. This is because github doesn't yet know about your new branch. Nicely though, it tells you what to type to fix this. Copy what it says and it will work nicely. (instead of `--set-upstream` you can use the shorthand `-u`). Eventually you will get used to typing this out the first time you push a new branch, but it's okay for now to go through this process. Now the internet knows about this branch and you can use just `git push` in the future.
+
+Also if this is the first time that you push then github may ask for authorisation. 
 
 #### Pull request
 
 This sends a request to blessed to merge in the changes you have made. Go to your github fork page and find your way to the branch that you have just pushed, and click New Pull Request. I won't go into details here as there are a few ways to do this. If you are quick enough after pushing then github will even give you a notification about the branch and suggest that you pull request. GIve the pull request a sensible title, and a good description. Check the files changed are the ones you want, then submit it.
 
-As the owner of blessed, I will get a notification then. I will comment on the PR, and potentially merge in your changes. Get used to people commenting on your code, and commenting on others. Code reviews are a huge part of software development, and are a safe place to improve and learn. Eventually you will all be code reviewing each other. Don't take offense, this is the final call before dev work goes into production code where it will often not change again. On this note, you do not merge in your own pull requests. Say it out loud. You Do Not Merge In Your Own Pull Requests! They must be reviewed always. No exceptions. If you accidentally click merge, then get a grown up. We've all done it, I've done it. Get it fixed asap. PRs have to be reviewed, approved, then merged.
+As the owner of blessed, I will get a notification then. I will comment on the PR, and potentially merge in your changes. Get used to people commenting on your code, and commenting on others. Code reviews are a huge part of software development, and are a safe place to improve and learn. Eventually you will all be code reviewing each other. Don't take offense, this is the final call before dev work goes into production code where it will often not change again. On this note, you do not merge in your own pull requests. Say it out loud. You Do Not Merge In Your Own Pull Requests! (Unless the product owner tells you to I suppose) They must be reviewed always. No exceptions. If you accidentally click merge, then get a grown up. We've all done it, I've done it. Get it fixed asap. PRs have to be reviewed, approved, then merged.
 
-In this case, I won't actually merge in your changes, but a PR will be the final step so you know this is all working.
+In this case, I won't actually merge in your changes, but I will comment. Seeing that on your PR will be the final step so you know this is all working.
 </details>
 
 <details>
@@ -168,6 +183,7 @@ Now, so you don't accidentally start working in main, get out of it! Either by c
 Or, bring a previous branch you are working on up to date
 
 `git checkout WorkingBranch`
+
 `git merge main`
 
 Now you are good to go. Assuming there are no merge conflicts. This is where a change that you have made in your work-in-progress (WIP) branch conflicts with a change that has been made by blessed to main. If so it will bring up the conflicting lines, and ask you to choose which one to keep. Be careful! This is where you can, and we all have at some point, lost work. On your WIP branch, commit early, commit often, and it will be fine.
