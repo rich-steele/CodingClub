@@ -28,8 +28,7 @@ Vector2::~Vector2()
 
 float Vector2::Length()
 {
-	// TODO Fill this out
-	return 0.0f;
+	return sqrt(x*x + y*y);
 }
 
 Vector2 Vector2::operator + (const Vector2 &v)

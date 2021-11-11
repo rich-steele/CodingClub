@@ -100,5 +100,18 @@ namespace GameEngineTests
 			Assert::AreEqual(expected.x, vectorA.x);
 			Assert::AreEqual(expected.y, vectorA.y);
 		}
+
+		TEST_METHOD(Vector2_Length_Func_Returns_Length_Of_3_4_5_Triangle) // Right hand side to Left hand side
+		{
+			// Given
+			Vector2 testVector(3, 4);
+
+			// When
+			float actualLength = testVector.Length();
+
+			// Then
+			float expectedLength = 5.0f;
+			Assert::AreEqual(expectedLength, actualLength);
+		}
 	};
 }
