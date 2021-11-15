@@ -32,7 +32,11 @@
 *.app
 
 # Other
-CodingClubSource/CodingClub/Debug/*
-CodingClubSource/CodingClubTests/Debug/*
-CodingClubSource/CodingClub.VC.db
-CodingClubSource/CodingClub.VC.VC.opendb
+*.log
+*.tlog
+*.ilk
+*.pdb
+*.txt
+*.idb
+*.exp
+*.ipch

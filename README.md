@@ -1,26 +1,25 @@
 # CodingClub
 
-## Contents
-<ol>
-<li><a href="#Set-up-your-project">Set up your project</a></li>
-<li><a href="#Nicer-git-environment">Nicer git environment</a></li>
-<li><a href="#Visual-studios">Visual studios</a></li> 
-<li><a href="#Check-it-all-works">Check it all works</a></li>
-<li><a href="#Updating-with-stuff-Ive-added">Updating with stuff I've added</a></li>
-</ol>
+The aim of coding club isn't to teach you how to program. You can do that in your own time.
+
+When I started this by doing small mobs on simple problems with people keen to learn software development, I did so with the opinion it is better to avoid getting stuck into one particular language, in fact to make a point of switching after every solution to show just how similar they all are. There are many resources to learn programming, but less about the the approach, consistent style, variable naming, showing intent, maintainability, debugging, code reviewing other solutions, unit tests, etc. So here I want to cover pretty much anything other than the language! When we would mob, I would emphasise not knowing things too (e.g. last time it was getting the size/length of a list in C#) so that you are not afraid of googling things, that knowing what to search for is better than just learning things parrot fashion.
+
+That being said, I wanted to move away from online IDEs and into Visual Studio, so I set up a simple repo and git instructions as a group open source project, starting with small unit testable maths/string functions, but with the aim of building something bigger when we have all the basics down. And that is in C++ currently. My aim for this is to ultimately create something collaborative and self perpetuating, spanning many languages from C like, to a web based front page.
+
+Also this doesn't pretend to be the only way to do software development, but it's the way that I do it, so it's almost definitely the best.
 
 <details>
   <summary id="Set-up-your-project">Set up your project</summary>
 
 ## Set up your project
 
-Go to https://github.com/Richard-Steele-Bluefruit/CodingClub (reading this, you may already be on this page, open a new window so you can follow this still)
+First you need a GitHub account. If you haven't got one then make one now.
+
+Go to https://github.com/Richard-Steele-Bluefruit/CodingClub (reading this, you may already be on this page, you may have found this page somewhere else, open a new window so you can follow this still)
 
 Top right, click on Fork
 
-Then yes or accept or whatever...
-
-Then you should be taken to the url of: `https://github.com/<YOUR_NAME>/CodingClub`
+Then click on your name to be taken to the url of: `https://github.com/<YOUR_NAME>/CodingClub`
 
 This is the github page for your copy of my repository. They are not connected, although they can be and we'll do that in a bit.
 
@@ -161,7 +160,7 @@ This sends a request to blessed to merge in the changes you have made. Go to you
 
 As the owner of blessed, I will get a notification then. I will comment on the PR, and potentially merge in your changes. Get used to people commenting on your code, and commenting on others. Code reviews are a huge part of software development, and are a safe place to improve and learn. Eventually you will all be code reviewing each other. Don't take offense, this is the final call before dev work goes into production code where it will often not change again. On this note, you do not merge in your own pull requests. Say it out loud. You Do Not Merge In Your Own Pull Requests! (Unless the product owner tells you to I suppose) They must be reviewed always. No exceptions. If you accidentally click merge, then get a grown up. We've all done it, I've done it. Get it fixed asap. PRs have to be reviewed, approved, then merged.
 
-In this case, I won't actually merge in your changes, but I will comment. Seeing that on your PR will be the final step so you know this is all working.
+In this case, I won't actually merge in your changes, but I will comment. Seeing that on your PR will be the final step so you know this is all working. This also serves to register your interest, so I will then add you to the slack channel, and you can access the trello board to see what comes next!
 </details>
 
 <details>
@@ -187,6 +186,18 @@ Or, bring a previous branch you are working on up to date
 `git merge main`
 
 Now you are good to go. Assuming there are no merge conflicts. This is where a change that you have made in your work-in-progress (WIP) branch conflicts with a change that has been made by blessed to main. If so it will bring up the conflicting lines, and ask you to choose which one to keep. Be careful! This is where you can, and we all have at some point, lost work. On your WIP branch, commit early, commit often, and it will be fine.
+</details>
+
+<details>
+  <summary id="What-comes-next">What comes next?</summary>
+
+## What comes next?
+
+As well as the coding club project which will be there to provide small challenges, a unit testing playground, snippets of example code to refer to, or anything else that doesn't really have a home, we are going to be making something! I'm not completely sure what yet, probably a game! Which means we need some game making code. I have set up a GameEngine project and a [Trello board](https://trello.com/invite/b/YUMvodZV/ecab63e0249f49606f7cd474ef239d1e/ccgameengine) and it's going to be amazing! A proper open source project for us all work on together. One day we'll add another project for a web based front end to show something and learn website stuff, and who knows what else! Until I update this readme though, we'll be working on that game engine project and learning lots of key software development practices on the way. NO friendships though.
+
+Glhf,
+
+Rich
 </details>
 
 
