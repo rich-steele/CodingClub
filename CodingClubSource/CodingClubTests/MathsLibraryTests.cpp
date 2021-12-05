@@ -136,5 +136,29 @@ namespace CodingClubTests
 
 			Assert::AreEqual(expected, value);
 		}
+
+		TEST_METHOD(Maths_CountBinaryBitsSet_Returns_Number_Of_Bits_In_3)
+		{
+			// When - pass in 3
+			int numberOfBinaryBitsSet = countBinaryBitsSet(3);
+
+			// Then - expect 2
+			// 3 in binary is 0011
+			int expected = 2;
+
+			Assert::AreEqual(expected, numberOfBinaryBitsSet);
+		}
+
+		TEST_METHOD(Maths_CountBinaryBitsSet_Returns_Number_Of_Bits_In_8)
+		{
+			// When - pass in 8
+			int numberOfBinaryBitsSet = countBinaryBitsSet(8);
+
+			// Then - expect 1
+			// 8 in binary is 1000
+			int expected = 2;
+
+			Assert::AreEqual(expected, numberOfBinaryBitsSet);
+		}
 	};
 }
