@@ -1,12 +1,6 @@
-# CodingClub
+# GitClub
 
-The aim of coding club isn't to teach you how to program. You can do that in your own time.
-
-When I started this by doing small mobs on simple problems with people keen to learn software development, I did so with the opinion it is better to avoid getting stuck into one particular language, in fact to make a point of switching after every solution to show just how similar they all are. There are many resources to learn programming, but less about the the approach, consistent style, variable naming, showing intent, maintainability, debugging, code reviewing other solutions, unit tests, etc. So here I want to cover pretty much anything other than the language! When we would mob, I would emphasise not knowing things too (e.g. last time it was getting the size/length of a list in C#) so that you are not afraid of googling things, that knowing what to search for is better than just learning things parrot fashion.
-
-That being said, I wanted to move away from online IDEs and into Visual Studio, so I set up a simple repo and git instructions as a group open source project, starting with small unit testable maths/string functions, but with the aim of building something bigger when we have all the basics down. And that is in C++ currently. My aim for this is to ultimately create something collaborative and self perpetuating, spanning many languages from C like, to a web based front page.
-
-Also this doesn't pretend to be the only way to do software development, but it's the way that I do it, so it's almost definitely the best.
+This doesn't pretend to be the only way to use git, but it's the way that I do it, so it's almost definitely the best.
 
 <details>
   <summary id="Set-up-your-project">Set up your project</summary>
@@ -15,13 +9,13 @@ Also this doesn't pretend to be the only way to do software development, but it'
 
 First you need a GitHub account. If you haven't got one then make one now.
 
-Go to https://github.com/Richard-Steele-Bluefruit/CodingClub (reading this, you may already be on this page, you may have found this page somewhere else, open a new window so you can follow this still)
+Go to https://github.com/rich-Steele/CodingClub (reading this, you may already be on this page, you may have found this page somewhere else, open a new window so you can follow this still)
 
 Top right, click on Fork
 
 Then click on your name to be taken to the url of: `https://github.com/<YOUR_NAME>/CodingClub`
 
-This is the github page for your copy of my repository. They are not connected, although they can be and we'll do that in a bit.
+This is the github page for your copy of my repository..
 
 Click green button "Code" in the middle, make sure that HTTPS is selected for now, and copy the grey box text (click the two squares symbol to copy automatically)
 
@@ -47,7 +41,7 @@ First notice how you have no remotes currently. Type:
 `git remote` and it will just have origin in there - *origin is what it always calls your repo*
 
 add me:
-```git remote add blessed https://github.com/Richard-Steele-Bluefruit/CodingClub.git```
+```git remote add blessed https://github.com/rich-Steele/CodingClub.git```
 
 then:
 `git remote` will show blessed as well. Blessed is traditionally the name of the repo that you fork from. Often not owned by any dev in particular, but the organisation.
@@ -193,7 +187,7 @@ Now you are good to go. Assuming there are no merge conflicts. This is where a c
 
 ## What comes next?
 
-As well as the coding club project which will be there to provide small challenges, a unit testing playground, snippets of example code to refer to, or anything else that doesn't really have a home, we are going to be making something! I'm not completely sure what yet, probably a game! Which means we need some game making code. I have set up a GameEngine project and a [Trello board](https://trello.com/invite/b/YUMvodZV/ecab63e0249f49606f7cd474ef239d1e/ccgameengine) and it's going to be amazing! A proper open source project for us all work on together. One day we'll add another project for a web based front end to show something and learn website stuff, and who knows what else! Until I update this readme though, we'll be working on that game engine project and learning lots of key software development practices on the way. NO friendships though.
+As well as the coding club project which will be there to provide small challenges, a unit testing playground, snippets of example code to refer to, or anything else that doesn't really have a home, we are going to be making something! I'm not completely sure what yet, probably a game! Which means we need some game making code. I have set up a GameEngine project and a [Trello board](https://trello.com/invite/b/YUMvodZV/ecab63e0249f49606f7cd474ef239d1e/ccgameengine) and it's going to be amazing! A proper open source project for us all work on together. One day we'll add another project for a web based front end to show something and learn website stuff, and who knows what else! Until I update this readme though, we'll be working on that game engine project and learning lots of key software development practices on the way.
 
 Glhf,
 
